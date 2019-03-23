@@ -4,7 +4,14 @@
 # or whitespace (' ').
 
 class EmailParser
+  @email_list
   
+  def initialize(list)
+    @email_list=list
+  end
   
+  def parse
+    @email_list.parse(//)
+  end
   
 end
